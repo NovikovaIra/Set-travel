@@ -44,15 +44,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    
 }
-.advertising-front-page__subtitle {
-   padding-bottom: 30px;
-}
+/* .advertising-front-page__subtitle {
+   padding-bottom: 28px;
+   padding-top: 52px;
+} */
 .advertising-front-page h2 {
     font-size: 35px;
     font-weight: 700;
+    padding-bottom: 28px;
+   padding-top: 52px;
    
 }
 
@@ -61,8 +63,8 @@ h1 {
     font-weight: 700;
 }
 .top-posts h1 {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 48px;
+    padding-bottom: 72px;
     text-align: center;
 }
 .top-posts__wrapper {
@@ -119,10 +121,14 @@ h1 {
 .top-posts_text_icon img {
     margin-right: 10px;
 }
-
+.latest_articles {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 .latest_articles h1 {
-    padding-top: 2em;
-    padding-bottom: 1.5em;
+    padding-top: 76px;
+    padding-bottom: 61px;
     text-align: center;
 
 
@@ -162,6 +168,7 @@ h1 {
 .latest_articles_text_text {
     font-size: 17px;
     color: #3D434C;
+    font-weight: 300;
     
 }
 .latest_articles_text_subtitle_blue {
@@ -207,8 +214,271 @@ h1 {
     max-width: 603px;
 }
 .button_show-more{
-  
+    padding-top: 16px;
+    padding-bottom: 19px;
+    padding-left: 74px;
+    padding-right: 62px;
     text-align: center;
     color: #438EFF;
-    ;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #438EFF;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 72px;
+    margin-bottom: 70px;
+}
+
+.seasons_wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.seasons_item {
+    width: 25%;
+    min-width: 480px;
+    min-height: 264px;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   background-size: cover;
+   
+}
+.seasons_item_title h1 {
+    font-size: 35px;
+    color: #FFFFFF;
+    margin-left: 15px;
+    
+}
+ .seasons_item_title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 29px;
+    padding-left: 63px;
+}
+
+
+.seasons_item li a {
+    color: #FFFFFF;
+    
+}
+.seasons_item ul  {
+    list-style: disc;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 111px;
+    
+}
+.seasons_item ul li {
+    list-style: disc;
+    color: #FFFFFF;
+}
+
+.footer{
+    background-color:  #34383E;
+    display: flex;
+    justify-content: space-around;
+  
+    padding-top: 70px;
+    padding-bottom: 64px;
+}
+.footer_logo {
+    max-width: 292px;
+}
+
+.footer_logo p {
+    color: #A1AEC0;
+    font-size: 15px;
+    font-weight: 300;
+}
+.footer_about ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 142px;
+    gap: 32px;
+}
+.footer_about p {
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 27px;
+}
+.footer_about a {
+    color:  #A1AEC0;
+    font-weight: 300;
+    font-size: 17px;
+    
+}
+.footer_join-us_wrapper {
+    display: flex;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+.footer_join-us_icon {
+    background-color: #4C535E;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+}
+.footer_join-us p{ 
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+p.footer_join-us_small-text{
+    font-weight: 300;
+    font-size: 17px;
+    color: #A1AEC0;
+}
+.footer_logo img {
+    margin-bottom: 40px;
+}
+
+
+
+.breadcrumb{
+    padding-top: 45px;
+    padding-bottom: 49px;
+    
+}
+ul.breadcrumb_crumb {
+    padding: 10px 16px;
+    list-style: none;
+    font-size: 12px;
+    font-weight: 500;
+    
+    max-width: 1240px;
+    margin: auto;
+    
+  }
+ul.breadcrumb_crumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  ul.breadcrumb_crumb li+li:before {
+    padding: 8px;
+    color: #6F757E;
+    content: "»";
+  }
+  ul.breadcrumb_crumb li a {
+    color: #6F757E;
+    text-decoration: none;
+  }
+/* Добавить цвет на наведении курсора мыши */
+ul.breadcrumb_crumb li a:hover {
+    color: black;
+    text-decoration: underline;
+  }
+
+
+.article_date {
+    display: flex;
+    gap: 10px;
+    max-width: 1240px;
+    padding-left: 16px;
+    margin: auto;
+}
+  .article_date p {
+    color: #26BC62;
+    font-style: normal;
+font-weight: 500;
+font-size: 13px;
+text-transform: uppercase;
+}
+.article_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 13px;
+    padding-bottom: 87px;
+}
+.article_text h1{
+    max-width: 764px;
+    font-weight: 700;
+    font-size: 50px;
+    color: #32363D;
+}
+.article_text p {
+    max-width: 450px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 29px;
+}
+.table_of_contents img {
+    width: 75%;
+}
+.table_of_contents {
+    display: flex;
+    align-items: center;
+    background-color: #F9FAFD;;
+}
+.table_of_contents_text h2 {
+    color: #32363D;
+    font-weight: 700;
+    font-size: 30px;
+    padding-bottom: 41px;
+}
+.table_of_contents_text {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 25%;
+}
+.table_of_contents_text ul li {
+    list-style: disc;
+    line-height: 21px;
+    font-weight: 400;
+}
+.table_of_contents_text li::marker {
+    color: #E9840E;
+}
+.table_of_contents_text a {
+    color: #E9840E;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.content h1 {
+    color: #32363D;
+    font-weight: 700;
+    font-size: 50px;
+    padding-top: 93px;
+    padding-bottom: 38px;
+    
+    
+}
+.content p {
+    max-width: 1240px;
+    font-weight: 300;
+font-size: 19px;
+Line-height: 30.4px;
+   
+}
+.content img {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    background-color: #F9FAFD;
+    justify-content: space-between;
+}
+.slider h1 {
+
+max-width: 1240px;
+padding-left: 16px;
+margin: auto;
 }
