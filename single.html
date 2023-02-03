@@ -3,11 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>Set Travel</title>
+        <link rel="stylesheet" href="package/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="css/rest.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     </head>
     <body>
         <header class="header">
@@ -77,9 +79,19 @@
             </div>
         </section>
         <section class="slider">
-                <h1>Алушта</h1>
-                <img src="img/Rectangle 15.png">
-            </div>
+                <div class="slider_column">
+                    <h1>Алушта</h1> 
+                    <div class="swiper-button-prev"></div>
+                </div>
+                
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/Rectangle 15.png"></div>
+                        <div class="swiper-slide"><img src="img/Rectangle 15.png"></div>  
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    
+                </div>
         </section>
         <section class="content">
             <div>
@@ -90,7 +102,14 @@
             </div>
         </section>
         <section class="slider">
-            <img src="img/Rectangle 15.png">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/Rectangle 15.png"></div>
+                    <div class="swiper-slide"><img src="img/Rectangle 15.png"></div>  
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
             <h1>Ялта</h1>
         
         </section>
@@ -107,8 +126,19 @@
             </div>
         </section>
         <section class="slider">
-            <h1>Судак</h1>
-            <img src="img/Rectangle 15.png">
+            <div class="slider_column">
+                <h1>Судак</h1> 
+                <div class="swiper-button-prev"></div>
+            </div>
+            
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/Rectangle 15.png"></div>
+                    <div class="swiper-slide"><img src="img/Rectangle 15.png"></div>  
+                </div>
+                <div class="swiper-button-next"></div>
+                
+            </div>
     </section>
         <section class="content">
             <div>
@@ -119,7 +149,14 @@
             </div>
     </section>
     <section class="slider">
-            <img src="img/Rectangle 15.png">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/Rectangle 15.png"></div>
+                <div class="swiper-slide"><img src="img/Rectangle 15.png"></div>  
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
             <h1>Другие<br>курорты ЮБК</h1>
     </section>
     <section class="content">
@@ -260,4 +297,8 @@
             <p class="footer_join-us_small-text">2020 © Set Travel</p>
         </div>
     </footer>
+    <script src="package/swiper-bundle.min.js"></script>
+    <script src="travel.js"></script>
+    </body>
+</html>
   
