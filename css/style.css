@@ -19,6 +19,10 @@ body {
 .header__menu ul li {
 
 }
+.header__logo img {
+    width: 150px;
+    max-width: 150px;
+}
 .header__menu a {
     text-decoration: none;
     color: black;
@@ -27,6 +31,10 @@ body {
 .header__advertising {
     display: flex;
     align-items: center;
+}
+.header__advertising_card {
+    width: 332px;
+    max-width: 332px;
 }
 .header__search {
     width: 40px;
@@ -40,6 +48,7 @@ body {
 .header__search img {
     width: 17px;
     height: 17px;
+    max-width: 17px;
 }
 .advertising-front-page {
     display: flex;
@@ -61,7 +70,7 @@ ul.dropdown-content {
     font-size: 16px;
    
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 10px;
     text-decoration: none;
 }
 .dropdown {
@@ -709,4 +718,73 @@ padding-bottom: 70px;
     background-color: #F9FAFD;
     margin-bottom: 24px;
    
+}
+
+
+@media (max-width: 1800px) {
+    .navbar a {
+        padding: 14px 4px;
+    }
+}
+@media (max-width: 1600px) {
+    .navbar a {
+        padding: 14px 1px;
+    }
+    .footer_about ul {
+         gap: 10px;
+    }
+}
+@media (max-width: 1550px) {
+    .header__advertising_card {
+        display: none;
+    }
+}
+@media (max-width: 1280px) {
+    .header__advertising_card {
+       display: none;
+    }
+    .advertising-front-page h2 {
+        font-size: 28px;
+    }
+    h1 {
+        font-size: 38px;
+    }
+    .seasons_item_title h1 {
+        font-size: 28px;
+    }
+    .top-posts_text_title {
+        font-size: 26px;
+    }
+}
+@media (max-width: 1200px) {
+        .navbar a {
+            font-size: 13px;
+        }
+}
+@media (max-width: 1100px) {
+    .seasons_item_title {
+        padding-left: 50px;
+    }
+    .seasons_item ul {
+        padding-left: 95px;
+    }
+    .dropdown-content {
+        min-width: 145px;
+    }
+}
+@media (max-width: 1050px) {
+    .dropdown-content {
+        min-width: 130px;
+    }
+}
+
+@media (max-width: 1024px) {
+}
+        
+
+
+@media (max-width: 1005px) {
+    .navbar a {
+        font-size: 11px;
+    }
 }
