@@ -755,7 +755,26 @@ padding-bottom: 70px;
     .top-posts_text_title {
         font-size: 26px;
     }
+    .article_text h1 {
+        font-size: 38px;
+        padding-left: 15px;
+    }
+    .content h1 {
+      font-size: 38px;
+    }
+    .content h2 {
+       
+        font-size: 28px;
+    }
+    .content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .article_text p {
+        padding: 10px;
+    }
 }
+
 @media (max-width: 1200px) {
         .navbar a {
             font-size: 13px;
@@ -779,12 +798,76 @@ padding-bottom: 70px;
 }
 
 @media (max-width: 1024px) {
+    .seasons_item {
+        width: 50%;
+    }
 }
         
 
 
 @media (max-width: 1005px) {
-    .navbar a {
-        font-size: 11px;
+
+    .header__menu ul {
+        display: flex;
+        flex-direction: column;
     }
+    header {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .menu-btn {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        z-index:2;
+        overflow: hidden;
+    }
+    .menu-btn span {
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #222222;
+        transition: all 0.5s;
+    }
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 6px);
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+      background: #FFEFBA;
+        transform: translateX(-100%);
+        transition: transform 0.5s; 
+    }
+    .menu.active {
+        transform: translateX(0);
+    }
+    .menu li {
+        list-style-type: none;
+    }
+    /* Меняем гамбургер иконку, когда меню открыто */
+.menu-btn.active span:nth-of-type(1) {
+    display: none;
+  }
+  .menu-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);  
+  }
+  .menu-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg); 
+  }
 }
+
+
+
