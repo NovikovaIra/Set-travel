@@ -749,6 +749,9 @@ padding-bottom: 70px;
     h1 {
         font-size: 38px;
     }
+    .slider h1 {
+        font-size: 28px;
+    }
     .seasons_item_title h1 {
         font-size: 28px;
     }
@@ -801,15 +804,35 @@ padding-bottom: 70px;
     .seasons_item {
         width: 50%;
     }
+    .swiper-button-next, .swiper-button-prev {
+        display: none;
+    }
+    .slider {
+        display: flex;
+        flex-direction: column;
+    }
+    .slider-right {
+    display: flex;
+    flex-direction: column-reverse;
+    }
+    .slider h1 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    }
 }
         
 
 
 @media (max-width: 1005px) {
 
-    .header__menu ul {
+   .menu-main {
         display: flex;
         flex-direction: column;
+        padding-top: 55px;
+    } 
+    .menu-main {
+        display: flex;
+        align-items: center;
     }
     header {
         display: flex;
@@ -819,7 +842,7 @@ padding-bottom: 70px;
         width: 30px;
         height: 30px;
         position: relative;
-        z-index:2;
+        z-index:3;
         overflow: hidden;
     }
     .menu-btn span {
@@ -833,7 +856,7 @@ padding-bottom: 70px;
         transition: all 0.5s;
     }
     .menu-btn span:nth-of-type(2) {
-        top: calc(50% - 5px);
+        top: calc(50% - 6px);
     }
     .menu-btn span:nth-of-type(3) {
         top: calc(50% + 6px);
@@ -842,12 +865,14 @@ padding-bottom: 70px;
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 50%;
         height: 100%;
         padding: 15px;
-      background: #FFEFBA;
+      background: #E5E5E5;
         transform: translateX(-100%);
         transition: transform 0.5s; 
+        overflow-y: auto;
+        z-index: 2;
     }
     .menu.active {
         transform: translateX(0);
@@ -867,7 +892,140 @@ padding-bottom: 70px;
     top: 50%;
     transform: translate(-50%, 0%) rotate(-45deg); 
   }
+  .noactive {
+    overflow: hidden;
+  }
+  .top-posts_item_text {
+    
+    z-index: -1;
+  }
+  .dropdown-content {
+    
+    position: inherit;
+  }
 }
 
+@media (max-width: 950px) {
+    .table_of_contents img {
+        width: 50%;
+    }
+    .table_of_contents {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .table_of_contents_text h2 {
+        padding-bottom: 10px;
+}
+.footer {
+    padding-right: 15px;
+    padding-left: 15px;
+    gap: 10px;
+}
+.footer_about ul {
+    gap: 5px;
+}
+.top-posts_item_img {
+    
+    width: 100%;
+}
+}
 
+@media (max-width: 768px) {
+    .footer {
+        display: flex;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_logo img {
+        margin-bottom: 10px;
+    }
+    .footer_logo {
+        text-align: center;
+    }
+    .footer_about {
+        text-align: center;
+    }
+    .footer_join-us {
+        text-align: center;
+    }
+    .footer_join-us_wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+    .social-media_icon {
+       
+        display: flex;
 
+        flex-direction: column;
+    }
+    .advertising-front-page h2 {
+        font-size: 24px;
+    }
+        h1 {
+        font-size: 27px;
+        }
+        .top-posts_text_title {
+            font-size: 20px;
+        }
+        .latest_articles_text_title {
+            font-size: 20px;
+        }
+        .table_of_contents_text h2 {
+       
+            padding-top: 15px;
+        }
+        .article_text h1 {
+            font-size: 27px;
+        }
+        .content h1 {
+            font-size: 27px;
+        }
+        .table_of_contents_text h2 {
+            
+            font-size: 24px;
+        }
+        .table_of_contents {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 15px;
+        }
+        .table_of_contents img {
+            width: 100%;
+        }
+        .latest_articles_item_wide {
+           
+            background-position: center;
+        }
+        .latest_articles_item_wide .latest_articles_item_text {
+          
+            margin-left: 5vw;
+        }
+    
+}
+@media (max-width: 480px) {
+    
+    .top-posts h1 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .article_text {
+        display: flex;
+        flex-direction: column;
+    }
+    .button_show-more {
+        
+        margin-top: 20px;
+        margin-bottom: 35px;
+    }
+   
+    .content {
+        
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+   
+}
