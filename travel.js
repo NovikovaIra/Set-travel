@@ -4,9 +4,6 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
- 
-
-
 let menuBtn = document.querySelector('.menu-btn');
 let menu = document.querySelector('.menu');
 let body = document.querySelector('body');
